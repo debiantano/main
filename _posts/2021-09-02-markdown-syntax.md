@@ -7,6 +7,7 @@ description: "Markdown Syntax"
 
 ## Titulo
 ### Subtitulo
+
 Este es un ejemplo de texto que da entrada a una lista genérica de elementos:
 
 - Elemento 1
@@ -24,7 +25,34 @@ Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de un
 ### Código puro
 `Esto es una linea de codigo`
 
+### Lenguaje de programacion
+```
+#!/usr/bin/python3
+import pty
+pty.spawn("/bin/bash")
+```
+
+
+
 ### Salto de linea
 Andando con sus patitas mojadas,  
 el gorrión  
 por la terraza de madera  
+
+### Citas
+> Creaciond ecitas con el simbolo matemático del mayor
+
+### Inserción d e imagenes
+![image1](https://e00-elmundo.uecdn.es/albumes/2009/01/05/marilyn_manson_cuarenta/1231144997_extras_albumes_0.jpg "titulo alternativo")
+
+### Linea divisora
+---
+
+### Tabla
+| argument | description       |
+| -------- | ----------------- |
+| -u       | url               |
+| -c       | colorized format  |
+| -w       | dictionary        |
+| -t       | Number of threads |
+| FUZZ     | parameter to fuzz |
