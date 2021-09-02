@@ -1,3 +1,4 @@
+  
 # visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
 paginate: 10 # pagination based on number of posts
@@ -5,25 +6,25 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
-disqus: Liodeus
-google_analytics: Liodeus
-title: Liodeus
+disqus: Debiantano
+google_analytics: debiantano
+title: Debiantano
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: Liodeus
+      title: Articles H4ck
 
-description: OSCP journey with Liodeus !
+description: Hack Player/OSWP !
 author:
-  name: Liodeus
-  email: thibaultgalbourdin@gmail.com
-  github: Liodeus
-  linkedin: thibault-galbourdin-9a4998144
-  bio: OSCP journey with Liodeus !
-  email_md5: 94b2c0c075c4ed839beee2dafbb2ac69
+  name: Debiantano
+  email: cromozzc@gmail.com
+  github: debiantano
+  linkedin: $
+  bio: Offensive Hacking - WiFi - CTFs!
+#  email_md5: 94b2c0c075c4ed839beee2dafbb2ac69
 
 # rss_path: feed.xml
 # categories_path: categories.html
