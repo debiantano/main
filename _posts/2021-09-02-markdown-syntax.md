@@ -1,3 +1,10 @@
+---
+layout: post
+title: Markdown Syntax
+tags: [syntax]
+description: "Markdown Syntax"
+---
+
 ## Titulo
 ### Subtitulo
 Este es un ejemplo de texto que da entrada a una lista genérica de elementos:
@@ -16,3 +23,8 @@ Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de un
 
 ### Código puro
 `Esto es una linea de codigo`
+
+### Salto de linea
+Andando con sus patitas mojadas,  
+el gorrión  
+por la terraza de madera  
