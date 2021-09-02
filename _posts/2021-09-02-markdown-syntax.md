@@ -32,15 +32,20 @@ import pty
 pty.spawn("/bin/bash")
 ```
 
-
+```
+❯ pwn cyclic 5000
+aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaazaabbaabcaabdaabeaabfaabgaabhaabiaabjaabkaablaabmaabnaaboaabpaabqaabraabsaabtaabuaabvaabwaabxaabyaabzaacbaaccaacdaaceaacfaacgaachaaciaacjaackaaclaacmaacnaacoaacpaacqaacraacsaactaacuaacvaacwaacxaacyaaczaadbaadcaaddaadeaadfaadgaadhaadiaadjaadkaadlaadmaadnaadoaadpaadqaadraadsaadtaa [...]
+```
 
 ### Salto de linea
 Andando con sus patitas mojadas,  
 el gorrión  
 por la terraza de madera  
+~~contenido tachado~~  
+termino: definición
 
 ### Citas
-> Creaciond ecitas con el simbolo matemático del mayor
+> Creacion de citas con el simbolo matemático del mayor
 
 ### Inserción d e imagenes
 ![image1](https://e00-elmundo.uecdn.es/albumes/2009/01/05/marilyn_manson_cuarenta/1231144997_extras_albumes_0.jpg "titulo alternativo")
