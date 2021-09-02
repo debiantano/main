@@ -48,7 +48,7 @@ termino: definición
 ### Citas
 > Creacion de citas con el simbolo matemático del mayor
 
-### Inserción d e imagenes
+### Inserción de imágenes
 ![image1](https://e00-elmundo.uecdn.es/albumes/2009/01/05/marilyn_manson_cuarenta/1231144997_extras_albumes_0.jpg "titulo alternativo")
 
 ### Linea divisora
