@@ -44,11 +44,15 @@ Nmap done: 256 IP addresses (3 hosts up) scanned in 4.40 seconds
 ```
 
 ### ceando un script
+
 ![ipScan](/assets/imgs/box3/ipScan.png)
+
+```
 ❯ ./ipScan.sh
 172.16.37.1
 172.16.37.220
 172.16.37.234
+```
 
 ------
 
@@ -161,7 +165,7 @@ xyz                     [Status: 301, Size: 321, Words: 20, Lines: 10]
 index.php               [Status: 200, Size: 1408, Words: 348, Lines: 28]
 ```
 
-![fuente2](/assets/imgs/box3/fuente3)
+![fuente2](/assets/imgs/box3/fuente2.png)
 
 
 ### FTP (40121)
