@@ -7,7 +7,7 @@ description: "BlackBox3 INE-ejpt"
 
 - [Enumerando objetivos](#enumerando-objetivos)
   * [Nmap](#nmap)
-  * [ceando un script](#ceando-un-script)
+  * [creando un script](#creando-un-script)
 - [Escaneo de servicios](#escaneo-de-servicios)
 - [172.16.37.220](#1721637220)
   * [Web](#web)
@@ -43,7 +43,7 @@ Host is up (0.073s latency).
 Nmap done: 256 IP addresses (3 hosts up) scanned in 4.40 seconds
 ```
 
-### ceando un script
+### creando un script
 
 ![ipScan](/assets/imgs/box3/ipScan.png)
 
