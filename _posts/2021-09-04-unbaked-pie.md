@@ -5,6 +5,8 @@ tags: [portforwrding,hydra,pickle]
 description: Unbaked-Pie TryHackMe
 ---
 
+![logo](/assets/imgs/unbaked/logo.png)
+
 - [Enumeración de puertos](#enumeraci-n-de-puertos)
   * [WhatWeb](#whatweb)
   * [Servicio Web (puerto 5003)](#servicio-web--puerto-5003-)
@@ -19,8 +21,6 @@ description: Unbaked-Pie TryHackMe
   * [Iniciando sesion como usuario ramsey](#iniciando-sesion-como-usuario-ramsey)
   * [Obteniedno shell como ramsey](#obteniedno-shell-como-ramsey)
   * [Usuario root](#usuario-root)
-
-![logo](/assets/imgs/unbaked/logo.png)
 
 ## Enumeración de puertos
 
