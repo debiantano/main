@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enumeracipon de servicios
-tags [CheetSheat]
+title: Enumeración de servicios
+tags: [CheetSheat]
 description: "Enumeracipon de servicios"
 ---
 
