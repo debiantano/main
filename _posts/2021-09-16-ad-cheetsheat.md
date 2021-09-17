@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Active Directory CheetSheat
+title: Active Directory
 tags: [windows, AD]
-description: Active Directory CheetSheat
+description: Active Directory
 ---
 
 
@@ -11,7 +11,7 @@ description: Active Directory CheetSheat
 - Windows Server 2008
 
 ### Gpp-Descifrar
- 
+
 ```
 gpp-decrypt <hash>
 ```
@@ -37,8 +37,6 @@ GetUserSPNs.py <dominio>/<user>:<password>
  ```
  GetUserSPNs.py <dominio>/<user>:<password -request
  ```
- 
+
 Más información:  
 [https://www.hackingarticles.in/deep-dive-into-kerberoasting-attack/](https://www.hackingarticles.in/deep-dive-into-kerberoasting-attack/)
-
-
