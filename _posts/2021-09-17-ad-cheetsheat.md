@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Active Direcroty CheetSheat
+title: Active Directory CheetSheat
 subtitle: Active Direcroty CheetSheat
 tags: [windows, AD]
-description: Active Direcroty CheetSheat
+description: Active Directory CheetSheat
 ---
 
 
