@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Active Directory CheetSheat
-subtitle: Active Direcroty CheetSheat
 tags: [windows, AD]
 description: Active Directory CheetSheat
 ---
