@@ -18,7 +18,7 @@ gpp-decrypt <hash>
 ```
 
 
-Más información:
-[https://www.hackingarticles.in/credential-dumping-group-policy-preferences-gpp/](https://www.hackingarticles.in/credential-dumping-group-policy-preferences-gpp/)
+Más información:  
+[https://www.hackingarticles.in/credential-dumping-group-policy-preferences-gpp/](https://www.hackingarticles.in/credential-dumping-group-policy-preferences-gpp/)  
 [https://adsecurity.org/?p=2288](https://adsecurity.org/?p=2288)
 
