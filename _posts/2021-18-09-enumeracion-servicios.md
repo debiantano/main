@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Enumeración de servicios
+title: Enumeracion de servicios
 tags: [CheetSheat]
-description: "Enumeracipon de servicios"
+description: "Enumeracion de servicios"
 ---
 
 ## Samba
