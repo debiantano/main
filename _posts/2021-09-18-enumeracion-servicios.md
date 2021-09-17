@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Enumeracion de servicios
+title: Servicios
 tags: [CheetSheat]
-description: "Enumeracion de servicios"
+description: "Servicios"
 ---
 
 ## Samba
@@ -28,5 +28,3 @@ psexec.py <domain>/<user>@<ip>
 ```
 
 ----
-
-
