@@ -38,7 +38,7 @@ GetUserSPNs.py <dominio>/<user>:<password>
  GetUserSPNs.py <dominio>/<user>:<password -request
  ```
  
-Más información:
+Más información:  
 [https://www.hackingarticles.in/deep-dive-into-kerberoasting-attack/](https://www.hackingarticles.in/deep-dive-into-kerberoasting-attack/)
 
 
