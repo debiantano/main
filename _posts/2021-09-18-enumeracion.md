@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Servicios
+title: Enumeración
 tags: [CheetSheat]
-description: "Servicios"
+description: "Enumeración"
 ---
 
 ## Samba
@@ -26,5 +26,12 @@ smbclient //<ip>/share -U <domain>\\<user>%<password>
 ```
 psexec.py <domain>/<user>@<ip>
 ```
+
+### CracMapExec
+
+```
+crackmapexec smb <ip>  -u <user> -p <password>
+```
+
 
 ----
