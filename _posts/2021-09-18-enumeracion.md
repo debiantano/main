@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Enumeración CheetSheat
+title: Enumeración - CheetSheat
 tags: [CheetSheat]
-description: "Enumeración CheetSheat"
+description: "Enumeración - CheetSheat"
 ---
 
 ## Samba
