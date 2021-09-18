@@ -35,3 +35,12 @@ crackmapexec smb <ip>  -u <user> -p <password>
 
 
 ----
+
+## Transferencia de archivos
+
+### Linux
+
+```
+nc -lvp <port> > file (recibe el fichero)
+nc <ip> < <file> <port> (envia el fichero)
+```
