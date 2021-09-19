@@ -5,7 +5,7 @@ tags: [CheetSheat]
 description: "Enumeración - CheetSheat"
 ---
 
-## Samba
+## Samba Port(445)
 
 ### Iniciar samba
 
@@ -58,6 +58,28 @@ umount <folder>
 ```
 nmap --script "vuln and safe" -p445 <ip>
 nmap --script=smb-enum-shares,smb-enum-users -p445 <ip>
+```
+
+----
+
+## DNS (port 53)
+
+| argumento | descripción                     |
+|-----------|---------------------------------|
+| ns        | nombres de servicio             |
+| mx        | servidores de correo            |
+| axfr      | ataque de transferencia de zona |
+
+```
+dig @<ip> <domain>
+dig @<ip> <domain> ns
+dig @<ip> <domain> mx
+```
+
+### Ataque de transferencia de zona
+
+```
+dig @<ip> <domain> axfr
 ```
 
 ----
