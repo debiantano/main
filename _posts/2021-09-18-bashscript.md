@@ -13,3 +13,8 @@ tags: [Linux,bash]
 | -i | ignora distinciones entre mayúsculas y minúsculas |
 | -r | modo recursivo |
 | -v | no mostrar |
+
+
+```
+cat targeted | grep -oP "\d{1,5}/tcp.*"
+```
