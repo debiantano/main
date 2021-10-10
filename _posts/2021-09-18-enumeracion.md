@@ -350,3 +350,15 @@ Método GET o POST
 ```
 tshark -r overpass2.pcapng -Y "http.request.method == GET or http.request.method == POST"
 ```
+
+----
+
+## Fuerza bruta
+
+### hashcat
+
+NTLM
+
+```
+hashcat -m 1000 --force <hash> /usr/share/wordlists/rockyou.txt
+```
