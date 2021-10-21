@@ -5,6 +5,12 @@ description: "PowerShell - CheetSheat"
 tags: [Windows,PowerShell]
 ---
 
+### No interactivo, ejecutar powershell
+
+```
+powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File file.ps1
+```
+
 ### ¿Es de 64 bits?
 
 ```
