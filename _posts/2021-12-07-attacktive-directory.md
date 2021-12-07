@@ -5,7 +5,13 @@ description: Attacktive Directory - THM
 tags: [AD,Windows,Kerberos]
 ---
 
-![logo](/assets/imgs/ada/logo.png)
+- [Enumeración de puertos](#enumeración-de-puertos)
+  * [Fuerza bruta a kerberos](#fuerza-bruta-a-kerberos)
+  * [ASREP Roast](#asrep-roast)
+- [Ataque DCSync](#ataque-dcsync)
+- [Acceso Remoto](#acceso-remoto)
+
+----
 
 ## Enumeración de puertos
 
