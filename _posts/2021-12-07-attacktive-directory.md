@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Attacktive Directory - THM
-subtitle: Attacktive Directory - THM
+description: Attacktive Directory - THM
 tags: [AD,Windows,Kerberos]
 ---
 
@@ -127,7 +127,7 @@ $krb5asrep$23$svc-admin@SPOOKYSEC.LOCAL:028b70ff59e26daf53850da8207bf3d7$aebdeae
 
 Obtenido el hash del usuario `svc-admin` aplico fuerza bruta para obtener la contraseña.
 
-![hash](/asset/imgs/ada/hash.png)
+![john](/asset/imgs/ada/john.png)
 
 Con la herramienta `crackmapexec` podemos validar si el usuario encontrado es correcto o es un falso positivo.
 
