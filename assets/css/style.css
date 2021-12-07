@@ -14,8 +14,9 @@ table, th, td {
 	position: fixed;
 	top: 0px;
 	padding-top: 10%;
-	background-color: #000000;
+	background: linear-gradient(to right, #080808, #4d4c4c, #2f2f2e, #3b3b3b, #000000);
 	color: #fff;
+	box-shadow: 0 0 15px rgb(0 0 0 / 70%);
 }
 
 .sidebar-header {
