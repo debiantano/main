@@ -96,6 +96,7 @@ article .share .gplus:hover {
 @media only screen and (min-width: 768px) {
     .page-header{
         margin-right: 70px;
+        margin-left: 70px;
     }
 }
 
