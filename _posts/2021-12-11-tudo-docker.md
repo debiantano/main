@@ -126,9 +126,9 @@ La solicitud intercepto con `BurpSuite` para modificar el aparatado de `Content-
 
 Desde el navegador se visualiza el archivo subido y como la aplicación web interpreta el código del script 
 
-![test](/assets/imgs/test.png)
+![test](/assets/imgs/tudo/test.png)
 
-![gif](/assets/imgs/gif.png)
+![gif](/assets/imgs/tudo/gif.png)
 
 ----
 
