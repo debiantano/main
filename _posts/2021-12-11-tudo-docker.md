@@ -1,7 +1,7 @@
 ---
 layout: post
-title: tudo
-description: tudo
+title: tudo - docker
+description: tudo - docker
 tags: [serializacion,xss,sqli,oswe]
 ---
 
@@ -109,9 +109,9 @@ La solicitud intercepto con `BurpSuite` para modificar el aparatado de `Content-
 
 Desde el navegador se visualiza el archivo subido y como la aplicación web interpreta el código del script 
 
-![test](../assets/imgs/test.png)
+![test](/assets/imgs/test.png)
 
-![gif](../assets/imgs/gif.png)
+![gif](/assets/imgs/gif.png)
 
 ----
 
@@ -240,7 +240,7 @@ Me dirijo a la siguiente `http://172.17.0.2/admin/update_motd.php`  para actuali
 
 Introduzco codigo en etiquetas `php` para hacer una traza de que verdaderamente esta funcionando.
 
-![test123](/assets/imgs/tudo/test123.ong)
+![test123](/assets/imgs/tudo/test123.png)
 
 Vuelvo al panel principal y efectivamente tengo la capacidad de inyectar código de forma remota
 
@@ -524,7 +524,7 @@ Con el objeto serializado que se ha construido emito una petición por `POST` ha
 
 Ya desde el navegador es posible ver como el archivo creado es accesible.
 
-![serial](/asssets/imgs/tudo/serial.png)
+![serial](/assets/imgs/tudo/serial.png)
 
 ----
 
@@ -608,23 +608,4 @@ www-data
 ```
 
 Hay 2 vulnerabilidades más, uno `SQL blind` en postgresql y otro es un `token spray` del usuario `admin` pero yo lo dejaré hasta aquí, los animo a continuar con esas dos restantes que su análisis es un poco más complicada que las anteriores, aunque talvés más adelante me animo a terminarla pero por hoy fue suficiente.
-
-
-//----
-
-//## SQLi blind
-
-//## Código vulnerable
-//### Explotación manual
-//### Automatizando la vulnerabilidad
-
-//----
-
-//## Adivinar el token de restablecimiento
-
-//### Código vulnerable
-//### Explotación manual
-//### Automatizando la vulnerabilidad
-
-
 
