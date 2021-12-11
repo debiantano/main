@@ -2,8 +2,25 @@
 layout: post
 title: tudo - docker
 description: tudo - docker
-tags: [serializacion,xss,sqli,oswe]
+tags: [serializacion,xss,oswe,subidaDeArchivos]
 ---
+
+- [Subida de archivos](#subida-de-archivos)
+  * [Código vulnerable](#código-vulnerable)
+  * [Explotación manual](#explotación-manual)
+  * [Automatizando la vulnerabilidad](#automatizando-la-vulnerabilidad)
+- [Ejecución Remota de Comandos](#ejecución-remota-de-comandos)
+  * [Código vulnerable](#código-vulnerable-1)
+  * [Explotación vulnerable](#explotación-vulnerable)
+  * [Automatizando la vulnerabilidad](#automatizando-la-vulnerabilidad-1)
+- [XSS](#xss)
+  * [Código vulnerable](#código-vulnerable-2)
+  * [Explotación manual](#explotación-manual-1)
+  * [Automatizando la vulnerabilidad](#automatizando-la-vulnerabilidad-2)
+- [Deserialización de PHP](#deserialización-de-php)
+  * [Código vulnerable](#código-vulnerable-3)
+  * [Explotación manual](#explotación-manual-2)
+  * [Automatizando la vulnerabilidad](#automatizando-la-vulnerabilidad-3)
 
 Continuando con mi preparación hacia OSWE, encontré un proyecto construido en `Docker` que presenta vulnerabilidades clásicas en aplicaciones web. **TUDO** es la aplicación vulnerable escrita en `php` y como gestor de datos utiliza `postgresql`,se encuentra alojado en el siguiente [repositorio](https://github.com/bmdyy/tudo). 
 
