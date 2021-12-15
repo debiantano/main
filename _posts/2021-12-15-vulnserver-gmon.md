@@ -2,7 +2,7 @@
 layout: post
 title: VulnServer - GMON
 description: VulnServer - GMON
-tags: [BoF,osed]
+tags: [BoF,osed,exploiting]
 ---
 
 La vulnerabilidad que intentaremos explotar es un desbordamiento de buffer basado en SEH en el párametro `GMON` de `vulnserver`.
@@ -352,7 +352,6 @@ nasm> add eax, 0x3e5
 05E5030000               add eax,0x3e5
 nasm> add ax, 0x3e5
 6605E503                 add ax,0x3e5
-
 nasm> jmp eax
 FFE0                     jmp eax
 ```
