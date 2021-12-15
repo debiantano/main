@@ -83,7 +83,7 @@ Se puede ver como el registro `EIP` se sobreescribe.
 timed out
 ```
 
-![reg](/assets/imgs/gmon.png)
+![reg](/assets/imgs/gmon/reg.png)
 
 No se visualiza de forma representativa, esto se debe a que una vez que llega a `EIP` el programa se detiene en ese instante y no llega a tocar la excepción, pero podemos ver en la parte del stack(parte inferior derecha de InmunityDebugger) cuando llega a sobreescribir el valor de SEH.
 
