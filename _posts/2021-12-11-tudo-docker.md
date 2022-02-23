@@ -134,7 +134,7 @@ Desde el navegador se visualiza el archivo subido y como la aplicación web inte
 
 ### Automatizando la vulnerabilidad
 
-```
+```python
 #!/usr/bin/python3
 
 import requests, sys, subprocess, time
