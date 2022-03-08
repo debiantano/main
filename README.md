@@ -1,1 +1,1 @@
-OSCP journey with Liodeus.
+**dbyl** -> static gitPage
