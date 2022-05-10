@@ -15,7 +15,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Articles H4ck
+      title: Cheat-Sheet
 
 description: Hack Player/OSWP !
 author:
