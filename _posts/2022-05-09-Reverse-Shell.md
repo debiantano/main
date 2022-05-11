@@ -1,3 +1,10 @@
+---
+layout: post
+title: Reverse Shell
+tags: [Linux, Windows,]
+description: Ways to get a reverse shell
+---
+
 ## Windows
 ### PowerShell
 ```powershell
