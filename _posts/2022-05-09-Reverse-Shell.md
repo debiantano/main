@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reverse Shell
-tags: [Linux, Windows,]
+tags: [netcat,powershell,powercat]
 description: Ways to get a reverse shell
 ---
 
