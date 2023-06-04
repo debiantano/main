@@ -23,3 +23,6 @@ description: linux scripting tricks
 > cat /etc/passwd | cut -d ":" -f 1
 ```
 
+<embed src="https://www.uv.mx/pozarica/caa-conta/files/2016/02/REGULAR-AND-IRREGULAR-VERBS.pdf" type="application/pdf" width="300px" height="400px" />
+
+<iframe src="https://prezi.com/p/embed/g-4-lbimbc9c/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="315" width="560"></iframe>
